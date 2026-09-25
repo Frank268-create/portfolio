@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  Frank john Sapio | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: rgba(30,30,47,0.9);
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a.active {
+      background-color: #ff6b6b;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('img/shelby.webp'); /* <-- Your background image */
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      padding: 2rem;
+      color: #fff;
+    }
+
+    .hero .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      gap: 3rem;
+    }
+
+    .hero .hero-content img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    .hero .text {
+      max-width: 600px;
+    }
+
+    .hero .text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .text p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .btn {
+      text-decoration: none;
+      color: #ff6b6b;
+      background-color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: #ffd6d6;
+    }
+
+    .skills,
+    .featured-projects {
+      width: 90%;
+      max-width: 1200px;
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .skills h2,
+    .featured-projects h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill {
+      background-color: #1e1e2f;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #ff6b6b;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: #1e1e2f;
+      color: #fff;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 992px) {
+      .hero .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .hero .hero-content img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="img/frank.jpg" alt="Frank john Sapio2">
+      <div class="text">
+        <h2>Frank john sapio</h2>
+        <p>I'm a passionate JavaScript developer who loves building interactive and user-friendly web experiences.</p>
+        <a href="projects.html" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>Brief description of your first project.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Brief description of your second project.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; HURTADA COPY RIGHTS 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
